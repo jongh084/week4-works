@@ -1,0 +1,71 @@
+.box {
+	width: 100px;
+	height: 100px;
+	background-color: green;
+	transition-property: all;
+	transition-duration: 1s;
+	float:left;
+	transform: scale(1, 1);
+
+	animation: opacityToZero;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+	animation-play-state: paused;
+}
+
+.box:hover {
+	transform:rotate(180deg);
+	transform:scale(0.5, 0.5);
+	animation-play-state: running;
+}
+
+.box2 {
+	width: 100px;
+	height: 100px;
+	background-color: brown;
+	transition-property: all;
+	transition-duration: 1s;
+	float:left;
+	transform: scale(1, 1);
+
+	animation: opacityToZero;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+	animation-play-state: paused;
+}
+
+.box2:hover {
+	transform:rotate(180deg);
+	transform:scale(0.5, 0.5);
+	animation-play-state: running;
+}
+
+.box3 {
+	width: 100px;
+	height: 100px;
+	background-color: gray;
+	transition-property: all;
+	transition-duration: 1s;
+	float:left;
+	transform: scale(1, 1);
+
+	animation: opacityToZero;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+	animation-play-state: paused;
+}
+
+.box3:hover {
+	transform:rotate(180deg);
+	transform:scale(0.5, 0.5);
+	animation-play-state: running;
+}
+@keyframes opacityToZero {
+
+	0% {
+		opacity: 1
+	}
+	100% {
+		opacity: 0
+	}
+}
